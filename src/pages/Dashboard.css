@@ -1,0 +1,22 @@
+.fade-enter {
+  opacity: 0;
+  transform: translateY(20px) scale(0.95);
+  filter: blur(5px);
+}
+.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  filter: blur(0);
+  transition: opacity 800ms ease, transform 800ms ease, filter 2000ms ease;
+}
+.fade-exit {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  filter: blur(0);
+}
+.fade-exit-active {
+  opacity: 0;
+  transform: translateY(20px) scale(0.95);
+  filter: blur(5px);
+  transition: opacity 800ms ease, transform 800ms ease, filter 1000ms ease;
+}
